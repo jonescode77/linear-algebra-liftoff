@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Algebra Liftoff</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="bg-gray-950 text-gray-300 antialiased">
+    <div id="app-container">
+        <header class="p-4 border-b border-white/10">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-extrabold text-white">🚀 Linear Algebra Liftoff</h1>
+                <div class="flex items-center space-x-3">
+                    <button id="pause-resume-btn" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white font-semibold text-sm transition-colors">Pause</button>
+                </div>
+            </div>
+            <div class="mt-4">
+                <div class="flex justify-between text-xs font-medium text-gray-400 mb-1">
+                    <span>Progress</span>
+                    <span id="progress-text">0%</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full h-2">
+                    <div id="progress-bar" class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="sections-container" class="h-full w-full">
+                </div>
+        </main>
+
+        <footer class="p-4 border-t border-white/10">
+            <div class="flex justify-between items-center">
+                <button id="prev-btn" class="px-6 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+                <div class="text-sm font-medium text-gray-400">Section <span id="current-section-text">1</span> of 20</div>
+                <button id="next-btn" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-white font-semibold transition-colors">Next</button>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="modules.js"></script>
+</body>
+</html>
